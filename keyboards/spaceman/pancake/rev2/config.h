@@ -1,4 +1,4 @@
-/* Copyright 2019 Spaceman
+/* Copyright 2020 Spaceman
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,4 +13,30 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "pancake.h"
+#pragma once
+#include "config_common.h"
+
+/* USB Device descriptor parameter */
+#define VENDOR_ID       0x5342 // SB 
+#define PRODUCT_ID      0x5032 // P2
+#define DEVICE_VER      0x0001
+#define MANUFACTURER    Spaceman
+#define PRODUCT         Pancake 2
+#define DESCRIPTION     Choc Ortho Keyboard
+
+/* extras */
+#define BACKLIGHT_PIN D6
+
+#ifdef OLED_ENABLE
+  #define SSD1306OLED
+#endif
+
+/* key matrix size */
+#define MATRIX_ROWS 4
+#define MATRIX_COLS 12
+
+#define DIODE_DIRECTION COL2ROW
+
+#define MATRIX_ROW_PINS { C7, C6, B6, B5 }
+#define MATRIX_COL_PINS { B0, B1, B2, B3, B7, E6, F7, F6, F5, F4, F1, F0 }
+#define UNUSED_PINS
