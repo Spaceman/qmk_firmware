@@ -19,17 +19,13 @@
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x5342 // SB 
 #define PRODUCT_ID      0x5032 // P2
-#define DEVICE_VER      0x0001
+#define DEVICE_VER      0x0002
 #define MANUFACTURER    Spaceman
 #define PRODUCT         Pancake 2
 #define DESCRIPTION     Choc Ortho Keyboard
 
 /* extras */
 #define BACKLIGHT_PIN D6
-
-#ifdef OLED_ENABLE
-  #define SSD1306OLED
-#endif
 
 /* key matrix size */
 #define MATRIX_ROWS 4
