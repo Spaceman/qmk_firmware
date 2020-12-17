@@ -95,13 +95,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 		switch (get_highest_layer(layer_state)) {
 				case _DEFAULT:
-						oled_write_P(PSTR("DEF\n"), false);
+						oled_write_P(PSTR("DEFLT\n"), false);
 						break;
 				case _FN:
-						oled_write_P(PSTR("FUN\n"), false);
+						oled_write_P(PSTR("FUNCT\n"), false);
 						break;
 				case _RAISE:
-						oled_write_P(PSTR("RAS\n"), false);
+						oled_write_P(PSTR("RAISE\n"), false);
 						break;
 				default:
 						// Or use the write_ln shortcut over adding '\n' to the end of your string
